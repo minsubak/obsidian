@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "5213111b8c6d8690",
+        "id": "63b4561820798dff",
         "type": "tabs",
         "children": [
           {
-            "id": "8802a0871820cdf2",
+            "id": "70e29169d8584833",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "linux/debian/command/cd.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -48,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#기본설정",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/debian/command/cd.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/debian/command/cd.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "linux/debian/command/cd.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,18 +138,21 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "8802a0871820cdf2",
+  "active": "70e29169d8584833",
   "lastOpenFiles": [
-    "linux/debian/command/ls.md",
+    "README.md",
     "linux/debian/command/cd.md",
     "linux/debian/command/default modify.md",
     "linux/debian/command/init.md",
+    "linux/debian/command/ls.md",
     "linux/debian/command/man.md",
     "linux/debian/command/shutdown.md",
-    "README.md",
+    "linux/debian/command/systemctl.md",
+    "docker/docker command.md",
+    "무제 파일 1.canvas",
+    "무제 파일.canvas",
     "linux/debian/command",
     "linux/debian/무제 파일.md",
-    "docker/docker command.md",
     "docker",
     "linux",
     "linux/debian"

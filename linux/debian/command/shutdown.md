@@ -38,6 +38,10 @@ HH:MM : HH시 MM분
 poweroff           // 종료
 systemctl poweroff // 종료
 systemctl reboot   // 재부팅
-system init 0      // 종료
-system init 6      // 재부팅
+sudo init 0      // 종료
+sudo init 6      // 재부팅
 ```
+- [[init]]
+- [[systemctl]]
+
+#데비안
