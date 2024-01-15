@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "37eaf0f296a4c0dc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docker/docker command.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "8802a0871820cdf2",
             "type": "leaf",
             "state": {
@@ -81,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 205.5
   },
   "right": {
     "id": "d582f9f77659d3f8",
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docker/docker command.md",
+                "file": "linux/debian/debian command.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docker/docker command.md",
+                "file": "linux/debian/debian command.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docker/docker command.md"
+                "file": "linux/debian/debian command.md"
               }
             }
           }
@@ -158,13 +146,13 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "37eaf0f296a4c0dc",
+  "active": "8802a0871820cdf2",
   "lastOpenFiles": [
-    "linux/debian/debian command.md",
     "docker/docker command.md",
+    "linux/debian/debian command.md",
+    "README.md",
     "docker",
     "linux",
-    "linux/debian",
-    "README.md"
+    "linux/debian"
   ]
 }
