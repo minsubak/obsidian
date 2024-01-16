@@ -11,8 +11,12 @@
             "id": "70e29169d8584833",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "linux/debian/command/systemctl.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "linux/debian/command/systemctl.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "linux/debian/command/systemctl.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "linux/debian/command/systemctl.md"
+              }
             }
           }
         ]
@@ -140,14 +148,14 @@
   },
   "active": "70e29169d8584833",
   "lastOpenFiles": [
-    "README.md",
-    "linux/debian/command/cd.md",
-    "linux/debian/command/default modify.md",
-    "linux/debian/command/init.md",
-    "linux/debian/command/ls.md",
-    "linux/debian/command/man.md",
     "linux/debian/command/shutdown.md",
     "linux/debian/command/systemctl.md",
+    "linux/debian/command/init.md",
+    "linux/debian/command/man.md",
+    "linux/debian/command/ls.md",
+    "linux/debian/command/cd.md",
+    "README.md",
+    "linux/debian/command/default modify.md",
     "docker/docker command.md",
     "무제 파일 1.canvas",
     "무제 파일.canvas",
