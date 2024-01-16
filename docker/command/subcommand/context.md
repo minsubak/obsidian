@@ -27,7 +27,6 @@ $docker context <subcommand> <context> -option "host=<host>"
 --kubernetes                 : 쿠버네티즈 클러스터와 연결할 때 사용, 클러스터의 URL, 
                               인증 토큰을 지정
 --swarm                      : 도커 스웜 클러스터와 연결할 때 사용, 스웜의 URL, CA인증서,                                  토큰 등을 설정
---help                       : 도움말 출력
 ```
 
 #도커

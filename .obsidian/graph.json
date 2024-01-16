@@ -25,7 +25,7 @@
       "query": "tag:#설정  ",
       "color": {
         "a": 1,
-        "rgb": 5066061
+        "rgb": 16777215
       }
     }
   ],
@@ -39,6 +39,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.0000000000000056,
+  "scale": 0.2588386562181653,
   "close": true
 }

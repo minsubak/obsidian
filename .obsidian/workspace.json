@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "63b4561820798dff",
+        "id": "a4339b22da9a7c7f",
         "type": "tabs",
         "children": [
           {
-            "id": "73684049c762ef80",
+            "id": "6de767cc292119c5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docker/command/subcommand/events.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4e7457fa589a56bb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "docker/command/!LIST!.md",
+                "file": "docker/command/subcommand/rm.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#기본설정",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docker/command/!LIST!.md",
+                "file": "docker/command/subcommand/rm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docker/command/!LIST!.md",
+                "file": "docker/command/subcommand/rm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docker/command/!LIST!.md"
+                "file": "docker/command/subcommand/rm.md"
               }
             }
           }
@@ -159,38 +146,38 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "4e7457fa589a56bb",
+  "active": "bf866c4f8b95b25d",
   "lastOpenFiles": [
-    "docker/command/subcommand/events.md",
-    "docker/command/subcommand/diff.md",
+    "docker/command/subcommand/rename.md",
+    "docker/command/subcommand/ps.md",
+    "docker/command/subcommand/port.md",
+    "docker/command/subcommand/plugin.md",
+    "docker/command/subcommand/pause.md",
+    "docker/command/subcommand/node.md",
+    "docker/command/subcommand/network.md",
     "docker/command/subcommand/container.md",
-    "docker/command/subcommand/create.md",
-    "docker/command/subcommand/cp.md",
-    "docker/command/subcommand/context.md",
-    "docker/command/subcommand/attach.md",
-    "docker/command/subcommand/builder.md",
-    "docker/command/subcommand/checkpoint.md",
-    "docker/command/subcommand/commit.md",
+    "docker/command/subcommand/manifest.md",
     "docker/command/subcommand/config.md",
-    "docker/command/default modify.md",
-    "linux/debian/command/vi.md",
-    "linux/debian/command/systemctl.md",
-    "linux/debian/command/shutdown.md",
-    "linux/debian/command/man.md",
-    "linux/debian/command/ls.md",
-    "linux/debian/command/init.md",
-    "linux/debian/command/default modify.md",
-    "linux/debian/command/cd.md",
-    "docker/command/subcommand/build.md",
+    "docker/command/subcommand/logs.md",
+    "docker/command/subcommand/logout.md",
+    "docker/command/subcommand/commit.md",
+    "docker/command/subcommand/checkpoint.md",
+    "docker/command/subcommand/login.md",
+    "docker/command/subcommand/load.md",
+    "docker/command/subcommand/kill.md",
+    "docker/command/subcommand/inspect.md",
+    "docker/command/subcommand/info.md",
+    "docker/command/subcommand/images.md",
+    "docker/command/subcommand/import.md",
+    "docker/command/subcommand/image.md",
+    "무제 파일.canvas",
+    "docker/command/subcommand/cp.md",
     "docker/command/!LIST!.md",
-    "puase.md",
-    "docker/command/command option tag.md",
-    "docker/command/subcommand/wait.md",
-    "docker/command/subcommand/volume.md",
+    "docker/command/subcommand/context.md",
+    "docker/command/subcommand/history.md",
     "docker/command/subcommand",
     "docker/command",
     "무제 파일 1.canvas",
-    "무제 파일.canvas",
     "linux/debian/command",
     "docker",
     "linux",

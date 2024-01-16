@@ -28,7 +28,6 @@ rm     : 체크포인트 삭제
 - option 태그
 ```bash
 --leave-running : 컨테이너가 정지하지 않은 상태에서 체크포인트 생성 (default : false)
---help          : checkpoint 명령어 도움말 출력
 ```
 
 - 체크포인트 복원 ([[start]])
