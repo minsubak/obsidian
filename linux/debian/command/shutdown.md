@@ -2,8 +2,8 @@
 
 - 개요
 ```txt
-shutdown 명령은 linux 시스템의 안전한 종료와 재부팅을 위해 사용
-관리자 권한이 요구되며, 시스템 종료/재부팅 신호를 H/W에 전달
+shutdown 명령은 linux 시스템의 안전한 종료와 재부팅을 위해 사용한다.
+관리자 권한이 요구되며, 시스템 종료/재부팅 신호를 H/W에 전달한다.
 ```
 
 - 명령어 기본 구성
@@ -33,7 +33,7 @@ now   : 즉시
 HH:MM : HH시 MM분
 ```
 
-- 비슷한 기능을 수행하는 명령어
+- 유사한 기능/연관된 명령어 ([[init]], [[systemctl]])
 ```bash
 poweroff           // 종료
 systemctl poweroff // 종료
@@ -41,7 +41,5 @@ systemctl reboot   // 재부팅
 sudo init 0      // 종료
 sudo init 6      // 재부팅
 ```
-- [[init]]
-- [[systemctl]]
 
 #데비안
