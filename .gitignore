@@ -1,2 +1,4 @@
 .tmp.driveupload/
 .tmp.drivedownload/
+.gitignore
+private/
