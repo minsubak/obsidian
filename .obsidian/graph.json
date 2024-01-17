@@ -8,24 +8,31 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "tag:#데비안",
-      "color": {
-        "a": 1,
-        "rgb": 8393748
-      }
-    },
-    {
       "query": "tag:#도커  ",
       "color": {
         "a": 1,
-        "rgb": 6078719
+        "rgb": 52479
+      }
+    },
+    {
+      "query": "tag:#데비안  ",
+      "color": {
+        "a": 1,
+        "rgb": 9637904
       }
     },
     {
       "query": "tag:#설정  ",
       "color": {
         "a": 1,
-        "rgb": 16777215
+        "rgb": 9067765
+      }
+    },
+    {
+      "query": "tag:#기록  ",
+      "color": {
+        "a": 1,
+        "rgb": 16746496
       }
     }
   ],

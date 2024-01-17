@@ -20,12 +20,12 @@ $docker context <flag> <context> -option "host=<host>"
 
 - flag 태그
 ```bash
-create : 
-ls : 
-use : 
-inspect : 
-rm : 
-update : 
+create  : 새 도커 컨텍스트를 생성, --docker 옵션을 통해 호스트를 지정
+ls      : 현재 설정된 도커 컨텍스트 목록을 출력
+use     : 특정 도커 컨텍스트를 사용
+inspect : 특정 도커 컨텍스트에 대한 자세한 정보를 출력
+rm      : 특정 도커 컨텍스트를 제거
+update  : 기존 도커 컨텍스트를 업데이
 ```
 
 - option 태그

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a4339b22da9a7c7f",
+        "id": "d9181ed449be6734",
         "type": "tabs",
         "children": [
           {
-            "id": "6de767cc292119c5",
+            "id": "80097358f58505f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/공부.md",
+                "file": "private/study/필기.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "private/공부.md",
+                "file": "private/study/필기.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "private/공부.md",
+                "file": "private/study/필기.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "private/공부.md"
+                "file": "private/study/필기.md"
               }
             }
           }
@@ -146,36 +146,39 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "6de767cc292119c5",
+  "active": "80097358f58505f5",
   "lastOpenFiles": [
-    "private/노트.md",
-    "private/일지.md",
-    "private/공부.md",
+    "docker/study/VPC.md",
+    "private/study/필기.md",
+    "docker/study/코드형 인프라 IaC.md",
+    "docker/study/RFC 1918.md",
+    "docker/command/subcommand/attach.md",
+    "private/record/암호.md",
+    "private/record/일지.md",
+    "README.md",
+    "docker/study",
+    "private/record",
+    "private/study",
+    "docker/command/subcommand/pause.md",
+    "무제 파일.canvas",
+    "2024-01-17.md",
+    "docker/command/subcommand/builder.md",
+    "docker/command/subcommand/build.md",
+    "docker/command/subcommand/cp.md",
     "docker/command/subcommand/context.md",
     "docker/command/subcommand/container.md",
+    "docker/command/subcommand/history.md",
+    "docker/command/subcommand/import.md",
+    "docker/command/subcommand/search.md",
+    "docker/command/subcommand/save.md",
     "docker/command/subcommand/config.md",
     "docker/command/subcommand/checkpoint.md",
     "docker/command/subcommand/image.md",
     "docker/command/subcommand/manifest.md",
     "docker/command/subcommand/network.md",
     "docker/command/subcommand/plugin.md",
-    "docker/command/subcommand/search.md",
-    "docker/command/subcommand/save.md",
     "docker/command/subcommand/run.md",
     "private",
-    "docker/command/subcommand/exec.md",
-    "docker/command/subcommand/export.md",
-    "docker/command/subcommand/images.md",
-    "docker/command/subcommand/import.md",
-    "docker/command/subcommand/inspect.md",
-    "docker/command/subcommand/kill.md",
-    "docker/command/subcommand/info.md",
-    "docker/command/subcommand/logout.md",
-    "docker/command/subcommand/rmi.md",
-    "docker/command/subcommand/rm.md",
-    "docker/command/subcommand/restart.md",
-    "docker/command/subcommand/rename.md",
-    "무제 파일.canvas",
     "docker/command/subcommand",
     "docker/command",
     "무제 파일 1.canvas",
