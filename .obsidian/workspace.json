@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docker/command/subcommand/save.md",
+                "file": "private/공부.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docker/command/subcommand/save.md",
+                "file": "private/공부.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docker/command/subcommand/save.md",
+                "file": "private/공부.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docker/command/subcommand/save.md"
+                "file": "private/공부.md"
               }
             }
           }
@@ -146,34 +146,35 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "bf866c4f8b95b25d",
+  "active": "6de767cc292119c5",
   "lastOpenFiles": [
-    "private",
-    "docker/command/subcommand/run.md",
+    "private/노트.md",
+    "private/일지.md",
+    "private/공부.md",
+    "docker/command/subcommand/context.md",
+    "docker/command/subcommand/container.md",
+    "docker/command/subcommand/config.md",
+    "docker/command/subcommand/checkpoint.md",
+    "docker/command/subcommand/image.md",
+    "docker/command/subcommand/manifest.md",
+    "docker/command/subcommand/network.md",
+    "docker/command/subcommand/plugin.md",
+    "docker/command/subcommand/search.md",
     "docker/command/subcommand/save.md",
+    "docker/command/subcommand/run.md",
+    "private",
     "docker/command/subcommand/exec.md",
     "docker/command/subcommand/export.md",
-    "docker/command/subcommand/image.md",
     "docker/command/subcommand/images.md",
     "docker/command/subcommand/import.md",
     "docker/command/subcommand/inspect.md",
     "docker/command/subcommand/kill.md",
     "docker/command/subcommand/info.md",
     "docker/command/subcommand/logout.md",
-    "docker/command/subcommand/manifest.md",
     "docker/command/subcommand/rmi.md",
     "docker/command/subcommand/rm.md",
     "docker/command/subcommand/restart.md",
     "docker/command/subcommand/rename.md",
-    "docker/command/subcommand/push.md",
-    "docker/command/subcommand/pull.md",
-    "docker/command/subcommand/ps.md",
-    "docker/command/subcommand/port.md",
-    "docker/command/subcommand/plugin.md",
-    "docker/command/subcommand/network.md",
-    "docker/command/subcommand/unpause.md",
-    "docker/command/subcommand/pause.md",
-    "docker/command/subcommand/node.md",
     "무제 파일.canvas",
     "docker/command/subcommand",
     "docker/command",

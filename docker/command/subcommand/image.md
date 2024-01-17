@@ -7,17 +7,17 @@
 
 - 명령어 기본 구성
 ```bash
-$docker image <subcommand> -option <image:tag>
+$docker image <flag> -option <image:tag>
 ```
 
 - 명령어 구성 설명
 ```bash
-<subcommand> : 이미지 명령에서 수행할 작업 플래그
+<flag> : 이미지 명령에서 수행할 작업 플래그
 -option      : 명령에 추가할 옵션
 <image:tag>  : 작업을 진행할 이미지의 이름과 태그
 ```
 
-- subcommand 태그
+- flag 태그
 ```bash
 ls      : 현재 시스템에 저장된 도커 이미지 목록을 표시
 pull    : 도커 허브 또는 다른 레지스트리에서 이미지를 내려받기

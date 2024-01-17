@@ -7,19 +7,19 @@
 
 - 명령어 기본 구성
 ``` bash
-$docker container <subcommand> -option <image> [command] [arg...]
+$docker container <flag> -option <image> [command] [arg...]
 ```
 
 - 명령어 구성 설명
 ```bash
-<subcommand> : 컨테이너 명령에서 수행할 작업 플래그
+<flag> : 컨테이너 명령에서 수행할 작업 플래그
 -option      : 명령어에 추가할 옵션
 <image>      : 사용할 도커 이미지의 ID 또는 이름
 [command]    : 컨테이너 내에서 실행할 명령어
 [arg...]     : 명령에 전달할 추가 인자
 ```
 
-- subcommand 태그
+- flag 태그
 ```bash
 create  : 새로운 컨테이너를 생성
 diff    : 컨테이너에서 파일 시스템에 대한 변경 사항을 출력

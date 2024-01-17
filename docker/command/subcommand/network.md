@@ -7,16 +7,16 @@
 
 - 명령어 기본 구성
 ```bash
-$docker network <subcommand> <network>
+$docker network <flag> <network>
 ```
 
 - 명령어 구성 설명
 ```bash
-<subcommand> : 네트워크 명령에서 수행할 작업 플래그
-<network>    : 작업할 네트워크 이름
+<flag>    : 네트워크 명령에서 수행할 작업 플래그
+<network> : 작업할 네트워크 이름
 ```
 
-- subcommand 태그
+- flag 태그
 ```bash
 create     : 새 도커 네트워크를 생성
 ls(list)   : 시스템에 존재하는 도커 네트워크 목록 출력

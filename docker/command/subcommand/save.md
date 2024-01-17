@@ -12,14 +12,14 @@ $docker save -option <image.tar> <image:tag>
 
 - 명령어 구성 설명
 ```bash
--option : 
-<image.tar>
-<image:tag
+-option     : 명령에 추가할 옵션
+<image.tar> : 저장할 tar 아카이브 파일 이름
+<image:tag  : 저장할 이미지 파일 이름
 ```
 
 - option 태그
 ```bash
-
+-o, --output : 아카이브 파일의 경로 및 이름을 지정
 ```
 
 #도커

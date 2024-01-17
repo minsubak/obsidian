@@ -7,17 +7,17 @@
 
 - 명령어 기본 구성
 ```bash
-$docker manifest <subcommand> [command] [server/image:tag]
+$docker manifest <flag> [command] [server/image:tag]
 ```
 
 - 명령어 구성 설명
 ```bash
-<subcommand>       : 매니페스트 명령에서 수행할 작업 플래그
+<flag>       : 매니페스트 명령에서 수행할 작업 플래그
 [command]          : 
 [server/image:tag] : 작업에 사용할 다중 아키텍쳐 이미지의 이름과 태그
 ```
 
-- subcommand 태그
+- flag 태그
 ```bash
 inspect    : 이미지 manifest에 대한 상세 정보를 출력
 create     : 이미지 manifest를 생성

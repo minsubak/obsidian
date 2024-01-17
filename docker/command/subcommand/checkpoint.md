@@ -7,18 +7,18 @@
 
 - 명령어 기본 구성
 ```bash
-$docker checkpoint <subcommand> -option <container> <checkpoint>
+$docker checkpoint <flag> -option <container> <checkpoint>
 ```
 
 - 명령어 구성 설명
 ```bash
-<subcommand> : 체크포인트 명령어에서 수행할 작업 플래그
+<flag> : 체크포인트 명령어에서 수행할 작업 플래그
 -option      : 명령어에 추가할 옵션
 <container>  : 상태를 저장할 도커 컨테이너의 ID 또는 이름
 <checkpoint> : 생성할 checkpoint 이름
 ```
 
-- subcommand 태그
+- flag 태그
 ```bash
 create : 체크포인트 생성
 ls     : 체크포인트 목록 출력

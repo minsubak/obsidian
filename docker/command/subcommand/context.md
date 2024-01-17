@@ -7,15 +7,25 @@
 
 - 명령어 기본 구성
 ```bash
-$docker context <subcommand> <context> -option "host=<host>"
+$docker context <flag> <context> -option "host=<host>"
 ```
 
 - 명령어 구성 설명
 ```bash
-<subcommand> : 컨텍스트 명령에서 수행할 작업 플래그
+<flag> : 컨텍스트 명령에서 수행할 작업 플래그
 <context>    : 컨텍스트의 이름
 -option      : 명령문에 추가할 옵션
 <host>       : 연결할 도커 호스트의 주소 또는 연결 정보
+```
+
+- flag 태그
+```bash
+create : 
+ls : 
+use : 
+inspect : 
+rm : 
+update : 
 ```
 
 - option 태그

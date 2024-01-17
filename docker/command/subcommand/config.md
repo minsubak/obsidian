@@ -7,17 +7,17 @@
 
 - 명령어 기본 구성
 ```bash
-$docker config <subcommand> <config> <file|directory|url>
+$docker config <flag> <config> <file|directory|url>
 ```
 
 - 명령어 구성 설명
 ```bash
-<subcommand>         : 구성 명령에서 수행할 작업 플래그
+<flag>         : 구성 명령에서 수행할 작업 플래그
 <config>             : 새 구성의 이름
 <file|directory|url> : 구성으로 사용될 파일, 디렉토리 또는 url
 ```
 
-- subcommand 태그
+- flag 태그
 ```bash
 create  : 새 구성을 생성
 ls      : 현재 생성된 구성의 목록 출력

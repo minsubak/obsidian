@@ -7,16 +7,16 @@
 
 - 명령어 기본 구성
 ```bash
-$docker plugin <subcommand> <plugin>
+$docker plugin <flag> <plugin>
 ```
 
 - 명령어 구성 설명
 ```bash
-<subcommand> : 플러그인 명령에서 수행할 작업 플래그
-<plugin>     : 작업할 플러그인 ID 또는 이름
+<flag>   : 플러그인 명령에서 수행할 작업 플래그
+<plugin> : 작업할 플러그인 ID 또는 이름
 ```
 
-- subcommand 태그
+- flag 태그
 ```bash
 ls(list)       : 현재 시스템에 설치된 도커 플러그인 목록 출력
 inspect        : 특정 플러그인에 대한 자세한 정보를 출력
