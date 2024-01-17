@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docker/study/테라폼 Terraform.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docker/study/테라폼 Terraform.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docker/study/테라폼 Terraform.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docker/study/테라폼 Terraform.md"
+                "file": "README.md"
               }
             }
           }
@@ -148,14 +148,16 @@
   },
   "active": "80097358f58505f5",
   "lastOpenFiles": [
-    "docker/study/VPC.md",
     "docker/study/앤서블 Ansible.md",
     "docker/study/코드형 인프라 IaC.md",
     "docker/study/테라폼 Terraform.md",
+    "docker/study/VPC.md",
     "docker/study/RFC 1918.md",
-    "Pasted image 20240117154600.png",
-    "Pasted image 20240117154532.png",
     "private/필기.md",
+    "resource",
+    "resource/코드형 인프라 IaC_image1.png",
+    "Pasted image 20240117154532.png",
+    "README.md",
     "private/일지.md",
     "private/암호.md",
     "linux/debian/command/!LIST!.md",
@@ -163,7 +165,6 @@
     "docker/command/!LIST!.md",
     "linux/debian/command/default modify.md",
     "linux/debian/command/ls.md",
-    "README.md",
     "docker/study",
     "private/record",
     "private/study",
@@ -185,7 +186,6 @@
     "무제 파일 1.canvas",
     "linux/debian/command",
     "docker",
-    "linux",
-    "linux/debian"
+    "linux"
   ]
 }

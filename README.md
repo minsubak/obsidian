@@ -5,16 +5,16 @@
 민감한 자료/더미는 .gitignore에 추가하여 github 동기화에서 제외됩니다.
 
 ##### 현재 목록
-|docker|
-	|command|
-		|subcommand|
-	|study|
-	
-|linux|
-	|debian|
-		|command|
-		
-|private|
-	(비공개)
+- obsidian
+	- docker
+		- command
+			- subcommand
+		- study
+		 ㅤ
+	- linux
+		- debian
+			- command
+		 ㅤ
+	- private
 
 #설정
