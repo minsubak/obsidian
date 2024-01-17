@@ -11,14 +11,14 @@
       "query": "tag:#도커  ",
       "color": {
         "a": 1,
-        "rgb": 52479
+        "rgb": 899053
       }
     },
     {
       "query": "tag:#데비안  ",
       "color": {
         "a": 1,
-        "rgb": 9637904
+        "rgb": 14092883
       }
     },
     {
@@ -34,6 +34,20 @@
         "a": 1,
         "rgb": 16746496
       }
+    },
+    {
+      "query": "tag:#IaC  ",
+      "color": {
+        "a": 1,
+        "rgb": 6084269
+      }
+    },
+    {
+      "query": "tag:네트워크",
+      "color": {
+        "a": 1,
+        "rgb": 10083839
+      }
     }
   ],
   "collapse-display": true,
@@ -46,6 +60,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.2588386562181653,
+  "scale": 0.2588386562181655,
   "close": true
 }

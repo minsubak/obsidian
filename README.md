@@ -15,6 +15,7 @@
 		- debian
 			- command
 		 ㅤ
-	- private
+	- private(비공개)
+
 
 #설정
