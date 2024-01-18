@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "study/network & cloud/서브넷.md",
+                "file": "private/암호.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 215.5
+    "width": 200
   },
   "right": {
     "id": "d582f9f77659d3f8",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "study/network & cloud/서브넷.md",
+                "file": "private/암호.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "study/network & cloud/서브넷.md",
+                "file": "private/암호.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "study/network & cloud/서브넷.md"
+                "file": "private/암호.md"
               }
             }
           }
@@ -146,26 +146,28 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "b07ff1343aa03b37",
+  "active": "bf866c4f8b95b25d",
   "lastOpenFiles": [
-    "study/network & cloud/ACG.md",
+    "private/일지.md",
+    "study/linux/docker/Dockerfile.md",
+    "private/암호.md",
+    "study/linux/docker/command/!LIST!.md",
+    "study/linux/docker/command/subcommand/checkpoint.md",
+    "study/IaC/앤서블 Ansible.md",
     "study/network & cloud/서브넷.md",
+    "study/network & cloud/ACG.md",
     "private/필기.md",
     "study/network & cloud/RFC 1918.md",
     "resource/앤서블 Ansible_image1.png",
     "resource/코드형 인프라 IaC_image1.png",
     "study/network & cloud/VPC.md",
     "study/network & cloud/ACL.md",
-    "private/일지.md",
-    "private/암호.md",
-    "study/IaC/앤서블 Ansible.md",
     "무제 폴더",
     "study/IaC",
     "network/무제 파일.md",
     "network/subnet",
     "study/IaC/테라폼 Terraform.md",
     "study/network & cloud",
-    "study/linux/docker/command/!LIST!.md",
     "study/IaC/코드형 인프라 IaC.md",
     "README.md",
     "무제 파일.canvas",
@@ -186,7 +188,6 @@
     "private/record",
     "private/study",
     "study/linux/docker/command/subcommand/pause.md",
-    "2024-01-17.md",
     "무제 파일 1.canvas"
   ]
 }
