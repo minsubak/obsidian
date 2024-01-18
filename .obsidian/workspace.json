@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6b357c4d70d884e1",
+        "id": "106d65fbcd0c58a8",
         "type": "tabs",
         "children": [
           {
-            "id": "cfe3ba729a229fce",
+            "id": "297b4dc8d2c896db",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docker/study/테라폼 Terraform.md",
+                "file": "linux/docker/study/VPC.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#클라우드",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "docker/study/테라폼 Terraform.md",
+                "file": "linux/docker/study/VPC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "docker/study/테라폼 Terraform.md",
+                "file": "linux/docker/study/VPC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "docker/study/테라폼 Terraform.md"
+                "file": "linux/docker/study/VPC.md"
               }
             }
           }
@@ -146,46 +146,46 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "bf866c4f8b95b25d",
+  "active": "297b4dc8d2c896db",
   "lastOpenFiles": [
-    "private/일지.md",
-    "private/필기.md",
+    "linux/docker/study/RFC 1918.md",
+    "linux/docker/study/NACL.md",
+    "linux/docker/study/ACG.md",
+    "linux/docker/study/테라폼 Terraform.md",
+    "linux/docker/study/코드형 인프라 IaC.md",
+    "linux/docker/study/앤서블 Ansible.md",
+    "README.md",
+    "무제 파일.canvas",
+    "resource/README.md",
+    "linux/무제 파일.md",
     "private/암호.md",
+    "private/필기.md",
+    "private/일지.md",
     "resource/코드형 인프라 IaC_image1.png",
     "resource/앤서블 Ansible_image1.png",
-    "docker/study/앤서블 Ansible.md",
-    "docker/study/RFC 1918.md",
-    "docker/study/VPC.md",
-    "docker/study/코드형 인프라 IaC.md",
+    "linux/docker/study/VPC.md",
     "linux/redhat/centos",
     "linux/redhat",
-    "docker/study/테라폼 Terraform.md",
     "().md",
-    "docker/command/subcommand/import.md",
-    "README.md",
+    "linux/docker/command/subcommand/import.md",
     "linux/debian/command/!LIST!.md",
-    "docker/study/NACL.md",
-    "docker/study/ACG.md",
     "Access.md",
     "resource",
     "Pasted image 20240117154532.png",
-    "docker/command/subcommand/attach.md",
-    "docker/command/!LIST!.md",
+    "linux/docker/command/subcommand/attach.md",
+    "linux/docker/command/!LIST!.md",
     "linux/debian/command/default modify.md",
     "linux/debian/command/ls.md",
-    "docker/study",
+    "linux/docker/study",
     "private/record",
     "private/study",
-    "docker/command/subcommand/pause.md",
-    "무제 파일.canvas",
+    "linux/docker/command/subcommand/pause.md",
     "2024-01-17.md",
-    "docker/command/subcommand/builder.md",
-    "docker/command/subcommand/build.md",
-    "docker/command/subcommand/cp.md",
-    "docker/command/subcommand/context.md",
+    "linux/docker/command/subcommand/builder.md",
+    "linux/docker/command/subcommand/build.md",
     "private",
-    "docker/command/subcommand",
-    "docker/command",
+    "linux/docker/command/subcommand",
+    "linux/docker/command",
     "무제 파일 1.canvas",
     "linux/debian/command"
   ]

@@ -22,7 +22,7 @@
       }
     },
     {
-      "query": "tag:#설정  ",
+      "query": "tag:#도움말  ",
       "color": {
         "a": 1,
         "rgb": 9067765
@@ -61,5 +61,5 @@
   "linkStrength": 1,
   "linkDistance": 250,
   "scale": 0.2588386562181655,
-  "close": true
+  "close": false
 }
