@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "106d65fbcd0c58a8",
+        "id": "00b23072b297246d",
         "type": "tabs",
         "children": [
           {
-            "id": "297b4dc8d2c896db",
+            "id": "b07ff1343aa03b37",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "linux/docker/study/VPC.md",
+                "file": "study/network & cloud/서브넷.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "linux/docker/study/VPC.md",
+                "file": "study/network & cloud/서브넷.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "linux/docker/study/VPC.md",
+                "file": "study/network & cloud/서브넷.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "linux/docker/study/VPC.md"
+                "file": "study/network & cloud/서브넷.md"
               }
             }
           }
@@ -146,47 +146,47 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "297b4dc8d2c896db",
+  "active": "b07ff1343aa03b37",
   "lastOpenFiles": [
-    "linux/docker/study/RFC 1918.md",
-    "linux/docker/study/NACL.md",
-    "linux/docker/study/ACG.md",
-    "linux/docker/study/테라폼 Terraform.md",
-    "linux/docker/study/코드형 인프라 IaC.md",
-    "linux/docker/study/앤서블 Ansible.md",
+    "study/network & cloud/ACG.md",
+    "study/network & cloud/서브넷.md",
+    "private/필기.md",
+    "study/network & cloud/RFC 1918.md",
+    "resource/앤서블 Ansible_image1.png",
+    "resource/코드형 인프라 IaC_image1.png",
+    "study/network & cloud/VPC.md",
+    "study/network & cloud/ACL.md",
+    "private/일지.md",
+    "private/암호.md",
+    "study/IaC/앤서블 Ansible.md",
+    "무제 폴더",
+    "study/IaC",
+    "network/무제 파일.md",
+    "network/subnet",
+    "study/IaC/테라폼 Terraform.md",
+    "study/network & cloud",
+    "study/linux/docker/command/!LIST!.md",
+    "study/IaC/코드형 인프라 IaC.md",
     "README.md",
     "무제 파일.canvas",
     "resource/README.md",
     "linux/무제 파일.md",
-    "private/암호.md",
-    "private/필기.md",
-    "private/일지.md",
-    "resource/코드형 인프라 IaC_image1.png",
-    "resource/앤서블 Ansible_image1.png",
-    "linux/docker/study/VPC.md",
     "linux/redhat/centos",
-    "linux/redhat",
+    "study/linux/redhat",
     "().md",
-    "linux/docker/command/subcommand/import.md",
-    "linux/debian/command/!LIST!.md",
+    "study/linux/docker/command/subcommand/import.md",
+    "study/linux/debian/command/!LIST!.md",
     "Access.md",
     "resource",
     "Pasted image 20240117154532.png",
-    "linux/docker/command/subcommand/attach.md",
-    "linux/docker/command/!LIST!.md",
-    "linux/debian/command/default modify.md",
-    "linux/debian/command/ls.md",
-    "linux/docker/study",
+    "study/linux/docker/command/subcommand/attach.md",
+    "study/linux/debian/command/default modify.md",
+    "study/linux/debian/command/ls.md",
+    "study",
     "private/record",
     "private/study",
-    "linux/docker/command/subcommand/pause.md",
+    "study/linux/docker/command/subcommand/pause.md",
     "2024-01-17.md",
-    "linux/docker/command/subcommand/builder.md",
-    "linux/docker/command/subcommand/build.md",
-    "private",
-    "linux/docker/command/subcommand",
-    "linux/docker/command",
-    "무제 파일 1.canvas",
-    "linux/debian/command"
+    "무제 파일 1.canvas"
   ]
 }
