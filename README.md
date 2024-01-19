@@ -6,16 +6,26 @@
 
 ##### 현재 목록
 - obsidian
-	- docker
-		- command
-			- subcommand
-		- study
+	- resource
 		 ㅤ
-	- linux
-		- debian
-			- command
+	- study
+		- IaC
+		ㅤ
+		- linux
+			- debian
+				- command
+				ㅤ
+			- docker
+				- command
+					- subcommand
+					ㅤ
+			- redhat
+			ㅤ
+		- network & cloud
 		 ㅤ
 	- private(비공개)
+	ㅤ
+	- README
   
 
 #도움말 
