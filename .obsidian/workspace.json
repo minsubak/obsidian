@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/암호.md",
+                "file": "private/강좌.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "private/암호.md",
+                "file": "private/강좌.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "private/암호.md",
+                "file": "private/강좌.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "private/암호.md"
+                "file": "private/강좌.md"
               }
             }
           }
@@ -146,11 +146,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "bf866c4f8b95b25d",
+  "active": "b07ff1343aa03b37",
   "lastOpenFiles": [
-    "private/일지.md",
-    "study/linux/docker/Dockerfile.md",
     "private/암호.md",
+    "private/일지.md",
+    "private/강좌.md",
+    "study/linux/docker/Dockerfile.md",
     "study/linux/docker/command/!LIST!.md",
     "study/linux/docker/command/subcommand/checkpoint.md",
     "study/IaC/앤서블 Ansible.md",
@@ -187,7 +188,6 @@
     "study",
     "private/record",
     "private/study",
-    "study/linux/docker/command/subcommand/pause.md",
     "무제 파일 1.canvas"
   ]
 }
