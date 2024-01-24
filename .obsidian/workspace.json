@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "private/docker/Docker Study.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 270.5
   },
   "right": {
     "id": "d582f9f77659d3f8",
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "private/docker/Docker Study.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "private/docker/Docker Study.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "private/docker/Docker Study.md"
               }
             }
           }
@@ -148,46 +148,52 @@
   },
   "active": "b07ff1343aa03b37",
   "lastOpenFiles": [
+    "private/docker/Docker Study_image1.png",
+    "private/docker/Docker Study.md",
+    "Pasted image 20240123174652.png",
+    "Pasted image 20240123174638.png",
     "private/강좌.md",
+    "study/wiki/linux/docker/command/subcommand/image.md",
+    "study/wiki/linux/docker/command/!LIST!.md",
+    "private/docker/부록_DB_복제.txt",
+    "private/docker/DockerfileCentOS.txt",
+    "private/docker/5.httpd-tomcat-mysql-https-이중화구성.txt",
+    "private/docker/Dockerfile.txt",
+    "private/docker/docker-compose.yaml.txt",
+    "private/docker/8.httpd-tomcat-dual-mysql-https-이중화구성.txt",
+    "private/docker/7.httpd-tomcat-dual-mysql-ajp-이중화구성.txt",
+    "private/docker/6.httpd-tomcat-mysql-https-redis-이중화구성.txt",
+    "private/docker/4.httpd-tomcat-mysql-ajp-이중화구성.txt",
+    "private/docker/3.httpd-tomcat-mysql-ajp-단일구성.txt",
+    "study/theory/Docker.md",
+    "private/일정.md",
     "private/암호.md",
-    "private/일지.md",
-    "study/linux/docker/Dockerfile.md",
-    "study/linux/docker/command/!LIST!.md",
-    "study/linux/docker/command/subcommand/checkpoint.md",
-    "study/IaC/앤서블 Ansible.md",
-    "study/network & cloud/서브넷.md",
-    "study/network & cloud/ACG.md",
-    "private/필기.md",
-    "study/network & cloud/RFC 1918.md",
-    "resource/앤서블 Ansible_image1.png",
+    "study/wiki/linux/docker/command/subcommand/cp.md",
+    "study/wiki/linux/docker/docker-compose.md",
+    "study/wiki/linux/docker/Dockerfile.md",
+    "study/wiki/cloud/VPC.md",
+    "study/wiki/cloud/RFC 1918.md",
+    "study/wiki/cloud/ACL.md",
+    "study/wiki/cloud/ACG.md",
+    "study/wiki/cloud/서브넷.md",
+    "study/wiki/IaC/테라폼 Terraform.md",
+    "study/wiki/IaC/코드형 인프라 IaC.md",
+    "study/wiki/IaC/앤서블 Ansible.md",
+    "study/무제 파일.md",
+    "study/wiki/linux/docker/command/subcommand/create.md",
+    "study/wiki/linux/docker/command/subcommand/container.md",
+    "study/wiki/linux/docker/command/subcommand/stop.md",
+    "study/wiki/linux/docker/command/subcommand/save.md",
+    "study/wiki/linux/docker/command/subcommand/search.md",
+    "study/wiki/linux/docker/command/subcommand/run.md",
+    "resource/VPC_image3.png",
+    "Pasted image 20240119135605.png",
+    "resource/VPC_image2.png",
+    "resource/VPC_image1.png",
     "resource/코드형 인프라 IaC_image1.png",
-    "study/network & cloud/VPC.md",
-    "study/network & cloud/ACL.md",
-    "무제 폴더",
-    "study/IaC",
-    "network/무제 파일.md",
-    "network/subnet",
-    "study/IaC/테라폼 Terraform.md",
-    "study/network & cloud",
-    "study/IaC/코드형 인프라 IaC.md",
-    "README.md",
+    "resource/앤서블 Ansible_image1.png",
     "무제 파일.canvas",
-    "resource/README.md",
-    "linux/무제 파일.md",
-    "linux/redhat/centos",
-    "study/linux/redhat",
-    "().md",
-    "study/linux/docker/command/subcommand/import.md",
-    "study/linux/debian/command/!LIST!.md",
-    "Access.md",
-    "resource",
     "Pasted image 20240117154532.png",
-    "study/linux/docker/command/subcommand/attach.md",
-    "study/linux/debian/command/default modify.md",
-    "study/linux/debian/command/ls.md",
-    "study",
-    "private/record",
-    "private/study",
     "무제 파일 1.canvas"
   ]
 }
