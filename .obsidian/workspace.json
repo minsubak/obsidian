@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "00b23072b297246d",
+        "id": "43bd0057c73dbf87",
         "type": "tabs",
         "children": [
           {
-            "id": "b07ff1343aa03b37",
+            "id": "6e54276de2437975",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "private/docker/Docker Study.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -64,12 +60,20 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "a6c528e8da4d46fe",
+            "type": "leaf",
+            "state": {
+              "type": "mk-path-view",
+              "state": {}
+            }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 270.5
+    "width": 236.5
   },
   "right": {
     "id": "d582f9f77659d3f8",
@@ -85,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "private/docker/Docker Study.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "private/docker/Docker Study.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +126,15 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "private/docker/Docker Study.md"
-              }
+              "state": {}
+            }
+          },
+          {
+            "id": "cba9ad79f9abe40a",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
             }
           }
         ]
@@ -143,13 +151,17 @@
       "canvas:새 캔버스 만들기": false,
       "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false
+      "command-palette:명령어 팔레트 열기": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "b07ff1343aa03b37",
+  "active": "6e54276de2437975",
   "lastOpenFiles": [
-    "private/docker/Docker Study_image1.png",
     "private/docker/Docker Study.md",
+    "Spaces/Home",
+    "Spaces",
+    "private/docker/Docker Study_image1.png",
     "Pasted image 20240123174652.png",
     "Pasted image 20240123174638.png",
     "private/강좌.md",
@@ -163,8 +175,6 @@
     "private/docker/8.httpd-tomcat-dual-mysql-https-이중화구성.txt",
     "private/docker/7.httpd-tomcat-dual-mysql-ajp-이중화구성.txt",
     "private/docker/6.httpd-tomcat-mysql-https-redis-이중화구성.txt",
-    "private/docker/4.httpd-tomcat-mysql-ajp-이중화구성.txt",
-    "private/docker/3.httpd-tomcat-mysql-ajp-단일구성.txt",
     "study/theory/Docker.md",
     "private/일정.md",
     "private/암호.md",
