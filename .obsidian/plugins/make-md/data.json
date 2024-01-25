@@ -76,7 +76,7 @@
   "autoAddContextsToSubtags": true,
   "autoMigration08": false,
   "releaseNotesPrompt": 0.815,
-  "enableDefaultSpaces": true,
+  "enableDefaultSpaces": false,
   "enableTagSpaces": true,
   "enableHomeSpace": true,
   "showSpacePinIcon": true,

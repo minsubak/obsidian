@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "43bd0057c73dbf87",
+        "id": "ff240a013bf78d1b",
         "type": "tabs",
         "children": [
           {
-            "id": "6e54276de2437975",
+            "id": "cc65ba62e3c75868",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "private/Docker Study for N3Cloud/Docker - 1 http 단일 구성 (3 Tier Architecture).md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -62,18 +66,19 @@
             }
           },
           {
-            "id": "a6c528e8da4d46fe",
+            "id": "9223680c44db42bf",
             "type": "leaf",
             "state": {
               "type": "mk-path-view",
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 236.5
+    "width": 282.5
   },
   "right": {
     "id": "d582f9f77659d3f8",
@@ -89,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "private/Docker Study for N3Cloud/Docker - 1 http 단일 구성 (3 Tier Architecture).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "private/Docker Study for N3Cloud/Docker - 1 http 단일 구성 (3 Tier Architecture).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "private/Docker Study for N3Cloud/Docker - 1 http 단일 구성 (3 Tier Architecture).md"
+              }
             }
           },
           {
@@ -156,26 +165,28 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "6e54276de2437975",
+  "active": "cc65ba62e3c75868",
   "lastOpenFiles": [
-    "private/docker/Docker Study.md",
+    "private/Docker Study for N3Cloud/Docker - 0 설치 가이드.md",
+    "private/Docker Study for N3Cloud/Docker - 1 http 단일 구성 (3 Tier Architecture).md",
+    "study/theory/Docker.md",
+    "1.0 http, tomcat, MySQL 설치 필요.md",
+    "private/Docker Study for N3Cloud/Docker_resource",
+    "private/Docker Study for N3Cloud/Docker_resource/Docker-0. install default setting.png",
     "Spaces/Home",
     "Spaces",
-    "private/docker/Docker Study_image1.png",
     "Pasted image 20240123174652.png",
     "Pasted image 20240123174638.png",
     "private/강좌.md",
     "study/wiki/linux/docker/command/subcommand/image.md",
     "study/wiki/linux/docker/command/!LIST!.md",
-    "private/docker/부록_DB_복제.txt",
-    "private/docker/DockerfileCentOS.txt",
-    "private/docker/5.httpd-tomcat-mysql-https-이중화구성.txt",
-    "private/docker/Dockerfile.txt",
-    "private/docker/docker-compose.yaml.txt",
-    "private/docker/8.httpd-tomcat-dual-mysql-https-이중화구성.txt",
-    "private/docker/7.httpd-tomcat-dual-mysql-ajp-이중화구성.txt",
-    "private/docker/6.httpd-tomcat-mysql-https-redis-이중화구성.txt",
-    "study/theory/Docker.md",
+    "private/Docker Study for N3Cloud/부록_DB_복제.txt",
+    "private/Docker Study for N3Cloud/DockerfileCentOS.txt",
+    "private/Docker Study for N3Cloud/5.httpd-tomcat-mysql-https-이중화구성.txt",
+    "private/Docker Study for N3Cloud/Dockerfile.txt",
+    "private/Docker Study for N3Cloud/docker-compose.yaml.txt",
+    "private/Docker Study for N3Cloud/8.httpd-tomcat-dual-mysql-https-이중화구성.txt",
+    "private/Docker Study for N3Cloud/7.httpd-tomcat-dual-mysql-ajp-이중화구성.txt",
     "private/일정.md",
     "private/암호.md",
     "study/wiki/linux/docker/command/subcommand/cp.md",
@@ -195,7 +206,6 @@
     "study/wiki/linux/docker/command/subcommand/stop.md",
     "study/wiki/linux/docker/command/subcommand/save.md",
     "study/wiki/linux/docker/command/subcommand/search.md",
-    "study/wiki/linux/docker/command/subcommand/run.md",
     "resource/VPC_image3.png",
     "Pasted image 20240119135605.png",
     "resource/VPC_image2.png",
