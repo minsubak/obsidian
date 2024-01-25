@@ -73,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -169,6 +168,7 @@
   "lastOpenFiles": [
     "private/Docker Study for N3Cloud/Docker - 0 설치 가이드.md",
     "private/Docker Study for N3Cloud/Docker - 1 http 단일 구성 (3 Tier Architecture).md",
+    "README.md",
     "study/theory/Docker.md",
     "1.0 http, tomcat, MySQL 설치 필요.md",
     "private/Docker Study for N3Cloud/Docker_resource",
@@ -205,7 +205,6 @@
     "study/wiki/linux/docker/command/subcommand/container.md",
     "study/wiki/linux/docker/command/subcommand/stop.md",
     "study/wiki/linux/docker/command/subcommand/save.md",
-    "study/wiki/linux/docker/command/subcommand/search.md",
     "resource/VPC_image3.png",
     "Pasted image 20240119135605.png",
     "resource/VPC_image2.png",

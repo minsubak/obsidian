@@ -1,5 +1,7 @@
 .tmp.driveupload/
 .tmp.drivedownload/
 .makemd/
+.makemd/fileCache.mdb
+.makemd/superstate.mdb
 .obsidian/
 private/
