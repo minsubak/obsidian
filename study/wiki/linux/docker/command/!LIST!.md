@@ -23,7 +23,7 @@
 | `images` | [[images]] |  |
 | `import` | [[import]] |  |
 | `info` | [[info]] |  |
-| `inspect` | [[inspect]] |  |
+| `inspect` | [[inspect]] | 입력받은 도커의 상세정보를 .json 형태로 출력 |
 | `kill` | [[kill]] |  |
 | `load` | [[load]] |  |
 | `login` | [[login]] |  |
