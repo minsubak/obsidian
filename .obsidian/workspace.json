@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ff240a013bf78d1b",
+        "id": "ad00e113a4c8f133",
         "type": "tabs",
         "children": [
           {
-            "id": "cc65ba62e3c75868",
+            "id": "72378525f8de7759",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "private/Docker Study for N3Cloud/Docker 0 - 설치 가이드.md",
+                "file": "private/Docker Study for N3Cloud/Docker - 3 계층 이중 구성 실습.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "d582f9f77659d3f8",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "private/Docker Study for N3Cloud/Docker 0 - 설치 가이드.md",
+                "file": "private/Docker Study for N3Cloud/Docker - 3 계층 이중 구성 실습.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "private/Docker Study for N3Cloud/Docker 0 - 설치 가이드.md",
+                "file": "private/Docker Study for N3Cloud/Docker - 3 계층 이중 구성 실습.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "private/Docker Study for N3Cloud/Docker 0 - 설치 가이드.md"
+                "file": "private/Docker Study for N3Cloud/Docker - 3 계층 이중 구성 실습.md"
               }
             }
           },
@@ -164,17 +165,34 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cc65ba62e3c75868",
+  "active": "72378525f8de7759",
   "lastOpenFiles": [
-    "private/Docker Study for N3Cloud/Docker 1 - http 단일 구성 (3 Tier Architecture).md",
-    "private/Docker Study for N3Cloud/Docker 0 - 설치 가이드.md",
+    "private/Docker Study for N3Cloud/Docker - 3 계층 단일 구조 실습.md",
+    "private/Docker Study for N3Cloud/Docker - 설치 가이드.md",
+    "private/Docker Study for N3Cloud/Docker - 3 계층 이중 구성 실습.md",
+    "private/강좌.md",
+    "study/Linux 네트워크 관리 커맨드.md",
+    "private/암호.md",
+    "private/Docker Study for N3Cloud/2.httpd-tomcat-mysql-http 단일구성.txt",
+    "private/Docker Study for N3Cloud/docker/부록_DB_복제.txt",
+    "private/Docker Study for N3Cloud/docker/DockerfileCentOS.txt",
+    "private/Docker Study for N3Cloud/docker/Dockerfile.txt",
+    "private/Docker Study for N3Cloud/docker/docker-compose.yaml.txt",
+    "private/Docker Study for N3Cloud/docker/8.httpd-tomcat-dual-mysql-https-이중화구성.txt",
+    "private/Docker Study for N3Cloud/docker/7.httpd-tomcat-dual-mysql-ajp-이중화구성.txt",
+    "private/Docker Study for N3Cloud/docker/6.httpd-tomcat-mysql-https-redis-이중화구성.txt",
+    "private/Docker Study for N3Cloud/docker/5.httpd-tomcat-mysql-https-이중화구성.txt",
+    "private/Docker Study for N3Cloud/docker/3.httpd-tomcat-mysql-ajp-단일구성.txt",
+    "private/Docker Study for N3Cloud/Docker (병합중) - http 단일 구성 (3 계층 구조).md",
+    "README.md",
+    "private/Docker Study for N3Cloud/command/subcommand/image.md",
     "private/Docker Study for N3Cloud/command/!LIST!.md",
+    "private/Docker Study for N3Cloud/command/subcommand/container.md",
+    "private/Docker Study for N3Cloud/command/subcommand/ps.md",
     "private/Docker Study for N3Cloud/command/subcommand/kill.md",
     "private/Docker Study for N3Cloud/command/subcommand/stop.md",
-    "private/강좌.md",
     "private/일지.md",
     "private/일정.md",
-    "private/암호.md",
     "private/Docker Study for N3Cloud/command/subcommand/run.md",
     "private/Docker Study for N3Cloud/command/subcommand/build.md",
     "private/Docker Study for N3Cloud/Docker_resource/Docker 0_image1.png",
@@ -182,29 +200,12 @@
     "private/Docker Study for N3Cloud/command/subcommand/volume.md",
     "study/wiki/linux/docker/Dockerfile.md",
     "private/Docker Study for N3Cloud/command/subcommand/context.md",
-    "private/Docker Study for N3Cloud/command/subcommand/container.md",
     "private/Docker Study for N3Cloud/command/subcommand/config.md",
     "private/Docker Study for N3Cloud/command/subcommand/checkpoint.md",
-    "private/Docker Study for N3Cloud/command/subcommand/image.md",
     "private/Docker Study for N3Cloud/command/subcommand/manifest.md",
     "private/Docker Study for N3Cloud/command/subcommand/network.md",
-    "private/Docker Study for N3Cloud/command/subcommand/plugin.md",
-    "private/Docker Study for N3Cloud/command/subcommand/save.md",
-    "private/Docker Study for N3Cloud/command/subcommand/rmi.md",
-    "private/Docker Study for N3Cloud/command/subcommand/rm.md",
-    "private/Docker Study for N3Cloud/command/subcommand/restart.md",
-    "private/Docker Study for N3Cloud/command/subcommand",
-    "private/Docker Study for N3Cloud/command",
-    "private/Docker Study for N3Cloud/Docker_resource",
-    "Spaces/Home",
-    "Spaces",
     "Pasted image 20240123174652.png",
     "Pasted image 20240123174638.png",
-    "private/Docker Study for N3Cloud/부록_DB_복제.txt",
-    "private/Docker Study for N3Cloud/DockerfileCentOS.txt",
-    "private/Docker Study for N3Cloud/5.httpd-tomcat-mysql-https-이중화구성.txt",
-    "private/Docker Study for N3Cloud/Dockerfile.txt",
-    "private/Docker Study for N3Cloud/docker-compose.yaml.txt",
     "resource/VPC_image3.png",
     "Pasted image 20240119135605.png",
     "resource/VPC_image2.png",
