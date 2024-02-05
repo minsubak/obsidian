@@ -5,3 +5,8 @@
 .makemd/superstate.mdb
 .obsidian/
 private/
+
+# if .gitignore does not work as intended
+# git rm -r --cached .
+# git add .
+# git commit -m "fix: fixed untraked files"

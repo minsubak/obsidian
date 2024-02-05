@@ -30,7 +30,7 @@ rm     : 체크포인트 삭제
 --leave-running : 컨테이너가 정지하지 않은 상태에서 체크포인트 생성 (default : false)
 ```
 
-- 체크포인트 복원 ([[start]])
+- 체크포인트 복원 ([[study/wiki/linux/docker/command/subcommand/start]])
 ```bash
 $docker start --checkpoint <checkpointName> <containerID || containerName>
 ```
