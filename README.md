@@ -12,6 +12,10 @@
 
 ### 현재 obsidian 디렉토리
 - obsidian (HOME)
+	- codebox (dir)(WIP: merged old repo)
+		- 2022
+		- 2023
+		- 2024
 	- study (dir)
 		- docker (dir)
 			- command (dir)
@@ -20,10 +24,10 @@
 			- docker-compose (dir)
 				- command (dir)
 			- dockerfile (dir)
-			- practice (dir)
-				- !practice_resource! (dir)
 		- Naver Cloud Platform (dir)
 			- !NCP_resource! (dir)
+		- practice (dir)
+		- ssh (dir)
 		- wiki (dir)
 			- !wiki_resource! (dir)
 			- cloud (dir)
