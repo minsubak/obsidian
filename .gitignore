@@ -5,7 +5,7 @@
 .makemd/superstate.mdb
 .obsidian/
 private/
-
+desktop.ini
 # if .gitignore does not work as intended
 # git rm -r --cached .
 # git add .

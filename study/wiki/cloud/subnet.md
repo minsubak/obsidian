@@ -1,5 +1,3 @@
-#위키
-
 subnet은 하나의 네트워크가 분할되어 나눠진 작은 네트워크를 뜻합니다. 이 네트워크를 분할하는 것을 subneting이라 하고, subneting은 subnet mask를 통해 수행합니다. subnet은 각 클래스로 나눠진 네트워크를 운영 중인 서비스의 규모에 맞추어 분할해 사용하여 낭비되는 IP 주소 자원을 최소화합니다. 또 네트워크의 규모를 줄여 broadcasting에 인한 부하를 줄이는 것 또한 가능합니다.
 
 subnet은 gateway를 통해 서로 통신할 수 있습니다(ARP, routing).
