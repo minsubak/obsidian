@@ -1,3 +1,5 @@
+#위키
+
 (이 문서는 [AWS 강의 자료](https://www.youtube.com/watch?v=OGQ8RU-9oP8&list=PL-VaKu9hkhpcx7ElwUvKvYngdB86BAXOW&index=1)의 이미지를 인용하였습니다.)
 (타 Cloud Platform과 용어의 차이가 존재하나 호환니다.)
 # 정의
@@ -38,7 +40,7 @@
 	+ On-Premises Netwok 연동 고려
 	+ Cloud Platform 내 Region 간 확장  
 
-# [[서브넷]]
+# [[subnet]]
 +  VPC CIDR 블록 범위에서 Region 별 세부 서브넷 정의
 	+ 서브넷 범위는 보통 /24 (256) 이상을 권고
 	+ 보통 5개의 주소는 Cloud Platform에 의해 예약된 주소라 사용 불가
@@ -53,6 +55,3 @@
 | ---- |
 | ![[VPC_image3.png]] |
 
-
-
-#공부 #클라우드 #네트워크

@@ -25,12 +25,12 @@ inspect : 구성에 대한 상세 정보를 출력
 rm      : 특정 구성을 제거
 ```
 
-- `docker service create` 명령에서 `--config` 옵션 : 서비스를 생성할 때 구성을 지정 ([[study/wiki/linux/docker/command/subcommand/service]])
+- `docker service create` 명령에서 `--config` 옵션 : 서비스를 생성할 때 구성을 지정 ([[service]])
 ```bash
 docker service create --config <config> <service>
 ```
 
-- `docker service update` 명령에서 `--config-rm | --config-add` 옵션: 서비스의 업데이트 중 구성을 추가하거나 제거 ([[study/wiki/linux/docker/command/subcommand/service]])
+- `docker service update` 명령에서 `--config-rm | --config-add` 옵션: 서비스의 업데이트 중 구성을 추가하거나 제거 ([[service]])
 ```bash
 docker service update --config-rm(-add) <config> <service>
 ```

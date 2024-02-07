@@ -1,3 +1,5 @@
+#위키
+
 (이 문서는 [AWS](https://aws.amazon.com/ko/what-is/iac/)의 IaC 설명을 인용합니다.)
 (이 문서는 [Medium](https://medium.com/cloudnativeinfra/when-to-use-which-infrastructure-as-code-tool-665af289fbde)의 사진을 인용합니다.)
 
@@ -53,6 +55,3 @@ DevOps팀은 다양한 목적으로 코드형 인프라를 사용합니다.
 
 현재 서비스 중인 IaC 도구 스펙트럼, 좌우는 커버리지 영역을 나타냄
 ![[코드형 인프라 IaC_image1.png]]
-
-
-#공부 #클라우드 #IaC
