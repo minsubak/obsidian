@@ -1,8 +1,11 @@
-#도커 #실습
+#NCP #도커 #실습
 # 0 intro
-3 계층 구조 + nginx를 단일 형태로 구현하는 실습입니다. prox를 설정하는 작업과, 각 프로그램의 conf 파일에 대한 이해가 필요합니다. docker container는 4개를 사용합니다. 실습에 필요한 환경 구성 방법은 `실습 메뉴얼.md` 를 참고해주세요. 또, 내용에 오류가 존재할 경우 알려주세요.
+3 계층 구조 + nginx를 단일 형태로 구현하는 실습입니다. 실습에 필요한 환경 구성은 `실습 메뉴얼.md` 를 참고해주시고, 내용에 오류가 존재할 경우 알려주세요.
 
-해당 강좌는 centOS 7의 Docker 학습을 진행합니다. Cloud 환경에서 진행할 경우, ACG와 IP 전달 설정(방화벽, 보안)에 유의해주세요.
+해당 강좌는 centOS 7 환경에서 진행합니다. Cloud 환경에서 진행할 경우, ACG와 Proxy설정에 유의해주세요. docker를 사용할 경우, 컨테이너 이름에 대한 설정에 유의하고, docker-compose 사용을 권장합니다.
+
+*NCP의 경우 4~5(niginx 사용 여부)개의 서버를 사용하며, `ssh`명령어를 통해 접근합니다.*
+*docker의 경우 4개의 컨테이너를 사용하며, `docker exec -it [container] bash`명령어를 통해 접근합니다.*
 
 + last udpate: 2024/02/07
 + wirte & edit by [@minsubak](https://github.com/minsubak) [@DicafriO](https://github.com/DicafriO)
@@ -10,9 +13,6 @@
 -------------------------------------------------------------------------------
 # 1 nginx
 ```bash
-docker exec -it [nginx container] bash
-# entering nginx contianer
-
 vim /etc/yum.repo.d/nginx.repo
 yum install nginx -y
 # install nginx
@@ -26,15 +26,14 @@ cd /etc/nginx/
 mkdir [domain]
 vim conf.d/[domain].conf
 # proxy work, [domain]: your domain
+# if you are using ssl, you must change port 80 to 443 
+# and clear commnet of the ssl script and redirection
 
 systemctl restart nginx
 # restart nginx
 
 curl localhost
 # test, result: nginx install success page
-
-exit
-# leaving container
 ```
 
 nginx.repo
@@ -49,13 +48,34 @@ gpgkey=https://nginx.org/keys/nginx_signing.key
 
 [domain].conf
 ```conf
+# server { redirection
+#    listen [port];
+#    server_name www.[domain] [domain];
+#    return 301 [http | https]://$server_name$request_uri;
+#}
+#
+#server { # redirection
+#    listen [port];
+#    server_name admin.[domain];
+#    return 301 [http | https]://$server_name$request_uri;
+#}
+#
+#server { # redirection
+#    listen [port];
+#    server_name pay.[domain];
+#    return 301 [http | https]://$server_name$request_uri;
+#}
+
 upstream admin { # web LB
-        server [web container]:80 max_fails=3 fail_timeout=30s;
+        server [web address]:80 max_fails=3 fail_timeout=30s;
 }
 
 server { # sending upstream to admin
         listen 80;
+        #ssl on;
         server_name admin.[domain] [domain];
+        #ssl_certificate /etc/nginx/[domain]/fullchain.pem;
+        #ssl_certificate_key /etc/nginx/[domain]/privkey.pem;
         location / {
                 proxy_set_header X-Forwarded-For $remote_addr;
                 proxy_set_header X-Forwarded-Proto $scheme;
@@ -65,12 +85,15 @@ server { # sending upstream to admin
 }
 
 upstream www { # web LB
-        server [web container]:80 max_fails=3 fail_timeout=30s;
+        server [web address]:80 max_fails=3 fail_timeout=30s;
 }
 
 server { # sending upstrem to www
         listen 80;
+        #ssl on;
         server_name www.[domain];
+        #ssl_certificate /etc/nginx/[domain]/fullchain.pem;
+        #ssl_certificate_key /etc/nginx/[domain]/privkey.pem;
         location / {
                 proxy_set_header X-Forwarded-For $remote_addr;
                 proxy_set_header X-Forwarded-Proto $scheme;
@@ -80,12 +103,15 @@ server { # sending upstrem to www
 }
 
 upstream pay { # web LB
-        server [web container]:80 max_fails=3 fail_timeout=30s;
+        server [web address]:80 max_fails=3 fail_timeout=30s;
 }
 
 server { # sending upstream to pay
         listen 80;
+        #ssl on;
         server_name pay.[domain];
+        #ssl_certificate /etc/nginx/[domain]/fullchain.pem;
+	    #ssl_certificate_key /etc/nginx/[domain]/privkey.pem;
         location / {
                 proxy_set_header X-Forwarded-For $remote_addr;
                 proxy_set_header X-Forwarded-Proto $scheme;
@@ -94,12 +120,10 @@ server { # sending upstream to pay
         }
 }
 ```   
+
 -------------------------------------------------------------------------------
 # 2 httpd (WEB)
 ```bash
-docker exec -it [web container] bash
-# entering container
-
 yum install httpd -y
 # install apache httpd
 
@@ -117,9 +141,6 @@ systemctl enable httpd
 systemctl start httpd
 systemctl status httpd
 # systemctl work
-
-exit
-# leaving container
 ```
 
 index.html
@@ -174,16 +195,16 @@ index.html
   ServerName admin.[domain]
   ProxyRequests Off
   ProxyPreserveHost On
-  ProxyPass / "http://[was container]:8080/"
-  ProxyPassReverse / "http://[was container]:8080/"
+  ProxyPass / "http://[was address]:8080/"
+  ProxyPassReverse / "http://[was address]:8080/"
 </VirtualHost>
 
 <VirtualHost *:80>
   ServerName pay.[domain]
   ProxyRequests Off
   ProxyPreserveHost On
-  ProxyPass / "http://[was container]:8080/sample/"
-  ProxyPassReverse / "http://[was container]:8080/sample/"
+  ProxyPass / "http://[was address]:8080/sample/"
+  ProxyPassReverse / "http://[was address]:8080/sample/"
 </VirtualHost>
 ```
 
@@ -216,13 +237,11 @@ ServerName www.[domain]:80
 </Directory>
 ...
 ```
+
 -------------------------------------------------------------------------------
 # 3 tomcat (WAS)
 
 ```bash
-docker exec -it [was container] bash
-# entering container
-
 yum install java-1.8.0-openjdk java-1.8.0-openjdk-devel -y
 yum install java-11-openjdk.x86_64 java-11-openjdk-devel.x86_64 -y
 # install jdk package
@@ -268,9 +287,6 @@ vim WEB-INF/web.xml
 vim index.jsp
 vim mysql_data.jsp
 # add web application deployment descripter and web pages
-
-exit
-# leaving container
 ```
 
 tomcat.service
@@ -305,7 +321,7 @@ context.xml
               username="[db username]"
               password="[db password]"
               driverClassName="com.mysql.cj.jdbc.Driver"
-              url="jdbc:mysql://[db container]"
+              url="jdbc:mysql://[db address]"
               maxTotal="50"
               maxIdle="20"
               maxWaitMillis="20000"/>
@@ -423,7 +439,7 @@ try{
 	}
 
 try {
-	String DB_URL = "jdbc:mysql://[db container]:3306/world";
+	String DB_URL = "jdbc:mysql://[db address]:3306/world";
 	String DB_USER = "[db username]";
 	String DB_PASSWORD= "[db password]]";
 	Class.forName("com.mysql.cj.jdbc.Driver");
@@ -451,13 +467,11 @@ catch(Exception e){
 }
 %>
 ```
+
 -------------------------------------------------------------------------------
 # 4 mysql (DB)
 
 ```bash
-docker exec -it [db container] bash
-# entering container
-
 cd /tmp
 # architecture independent version route: 8.0.36
 wget https://dev.mysql.com/get/mysql80-community-release-el7-11.noarch.rpm
@@ -505,9 +519,6 @@ mysql_secure_installation
 
 mysql -u root -p
 # login mysql
-
-exit
-# leaving container
 ```
 
 ```mysql
