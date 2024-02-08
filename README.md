@@ -33,8 +33,8 @@
 			- cloud (dir)
 			- IaC (dir)
 			- linux (dir)
-				- debain (dir)
-					- debian - command (dir)
-					- !debian - comand list! (.md)
+				- command (dir)
+				- etc command (dir)
+				- !linux - comand list! (.md)
 	- README (.md)   
 

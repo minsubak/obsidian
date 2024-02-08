@@ -4,10 +4,10 @@
 
 해당 강좌는 centOS 7 환경에서 진행합니다. Cloud 환경에서 진행할 경우, ACG와 Proxy설정에 유의해주세요. docker를 사용할 경우, 컨테이너 이름에 대한 설정에 유의하고, docker-compose 사용을 권장합니다.
 
-*NCP의 경우 4~5(niginx 사용 여부)개의 서버를 사용하며, `ssh`명령어를 통해 접근합니다.*
-*docker의 경우 4개의 컨테이너를 사용하며, `docker exec -it [container] bash`명령어를 통해 접근합니다.*
+*NCP의 경우 4~5(niginx 사용 여부)개의 서버를 사용하며, `ssh`명령어를 통해 접근*
+*docker의 경우 4개의 컨테이너를 사용하며, `docker exec -it [container] bash`명령어를 통해 접근*
 
-+ last udpate: 2024/02/07
++ last udpate: 2024/02/08
 + wirte & edit by [@minsubak](https://github.com/minsubak) [@DicafriO](https://github.com/DicafriO)
 
 -------------------------------------------------------------------------------
