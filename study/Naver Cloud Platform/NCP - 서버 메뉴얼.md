@@ -1,14 +1,14 @@
 #NCP
 
-해당 문서는 Naver Cloud Platform 에서 서버를 할당 및 설정하는 방법에 대해 기술하였다.
+해당 문서는 Naver Cloud Platform 에서 서버를 할당 및 설정하는 방법에 대해 설명합니다.
 
-+ last update: 2024/02/06
++ last update: 2024/02/13
 + write by [@minsubak](https://github.com/minsubak)
 
 # 0 콘솔
+###### 0.1 [Naver Cloud Platform]([Naver Cloud Platfrom](https://www.ncloud.com/))에 로그인 후, 좌측 상단의 `콘솔`버튼을 통해 `Dashboard`로 진입한다.
 |![[NCP - 서버 생성 가이드_image1.png]]|
 |:--:|
-[Naver Cloud Platform]([Naver Cloud Platfrom](https://www.ncloud.com/))에 로그인 후, 좌측 상단의 `콘솔` 버튼을 통해 `Dashboard`로 진입한다.
 
 # 1 VPC
 ###### 1.1 좌측 `Services`탭을 선택 후, 서비스 명에 VPC를 입력해 `VPC Management`에 접근한다.

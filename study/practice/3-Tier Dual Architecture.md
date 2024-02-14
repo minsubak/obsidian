@@ -4,14 +4,15 @@
 
 해당 강좌는 centOS 7 환경에서 진행합니다. Cloud 환경에서 진행할 경우, ACG와 Proxy설정에 유의해주세요. docker를 사용할 경우, 컨테이너 이름에 유의하고, docker-compose 사용을 권장합니다.
 
-*NCP의 경우 5개의 서버 + 2개의 LB서버 + 1개의 DB서버를 사용하며, `ssh`명령어를 통해 접근*
+*NCP의 경우 6개의 서버 + 2개의 LB서버 + 1개의 DB서버를 사용하며, `ssh`명령어를 통해 접근*
 *docker의 경우 7개의 컨테이너를 사용하며, `docker exec -it [container] bash`명령어를 통해 접근*
 
-* last update: 2024/02/08
+* last update: 2024/02/14
 * write by [@minsubak](https://github.com/minsubak)
 
 ------------------------------------------------------------------------------------
 # 1 nginx (external LB)
+##### - NCP환경일 경우 이 과정은 넘어간다.
 ```bash
 vim /etc/yum.repos.d/nginx.repo
 yum install nginx -y
@@ -139,8 +140,9 @@ cd /etc/httpd/conf.d
 vim [domain].conf
 # proxy work
 
-vim /etc/httpd/conf/httpd.conf
+vim ../conf/httpd.conf
 # default page edit and edit proxy setting
+# if proxy is not working normal... try this
 
 systemctl enable httpd
 systemctl start httpd
@@ -245,6 +247,7 @@ ServerName www.[domain]:80
 
 -------------------------------------------------------------------------------
 # 3 nginx (internal LB)
+NCP환경일 경우 이 과정을 넘어간다.
 ```bash
 vim /etc/yum.repos.d/nginx.repo
 yum install nginx -y
@@ -405,6 +408,42 @@ context.xml
 </Context>
 ```
 
+server.xml (was container0)
+```xml
+        <!-- clustering -->
+        <Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster" channelSendOptions="8" channelStartOptions="3">
+                <Manager className="org.apache.catalina.ha.session.DeltaManager" expireSessionsOnShutdown="false" notifyListenersOnReplication="true"/>
+                <Channel className="org.apache.catalina.tribes.group.GroupChannel">
+                        <Sender className="org.apache.catalina.tribes.transport.ReplicationTransmitter">
+                                <Transport className="org.apache.catalina.tribes.transport.nio.PooledParallelSender" />
+                        </Sender>
+                        <Receiver className="org.apache.catalina.tribes.transport.nio.NioReceiver"
+                        address="[was address0]"
+                        port="4055"
+                        autoBind="0"
+                        selectorTimeout="5000"
+                        maxThreads="6"/>
+
+                        <Interceptor className="org.apache.catalina.tribes.group.interceptors.TcpPingInterceptor" staticOnly="true"/>
+                        <Interceptor className="org.apache.catalina.tribes.group.interceptors.TcpFailureDetector" />
+                        <Interceptor className="org.apache.catalina.tribes.group.interceptors.StaticMembershipInterceptor">
+                        <Member
+                                className="org.apache.catalina.tribes.membership.StaticMember"
+                                port="4055"
+                                host="[was address1]"
+                                uniqueId="{0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2}"
+                        />
+                        </Interceptor>
+                        <Interceptor className="org.apache.catalina.tribes.group.interceptors.MessageDispatchInterceptor"/>
+                </Channel>
+
+                <Valve className="org.apache.catalina.ha.tcp.ReplicationValve" filter=".*\.gif;.*\.js;.*\.jpg;.*\.png;.*\.htm;.*\.html;.*\.css;.*\.txt;" />
+                <Valve className="org.apache.catalina.ha.session.JvmRouteBinderValve"/>
+                <ClusterListener className="org.apache.catalina.ha.session.ClusterSessionListener" />
+        </Cluster>
+        <!-- clustering  -->
+```
+
 server.xml (was container1)
 ```xml
         <!-- clustering -->
@@ -427,43 +466,7 @@ server.xml (was container1)
                         <Member
                                 className="org.apache.catalina.tribes.membership.StaticMember"
                                 port="4055"
-                                host="[was address2]"
-                                uniqueId="{0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,2}"
-                        />
-                        </Interceptor>
-                        <Interceptor className="org.apache.catalina.tribes.group.interceptors.MessageDispatchInterceptor"/>
-                </Channel>
-
-                <Valve className="org.apache.catalina.ha.tcp.ReplicationValve" filter=".*\.gif;.*\.js;.*\.jpg;.*\.png;.*\.htm;.*\.html;.*\.css;.*\.txt;" />
-                <Valve className="org.apache.catalina.ha.session.JvmRouteBinderValve"/>
-                <ClusterListener className="org.apache.catalina.ha.session.ClusterSessionListener" />
-        </Cluster>
-        <!-- clustering  -->
-```
-
-server.xml (was container2)
-```xml
-        <!-- clustering -->
-        <Cluster className="org.apache.catalina.ha.tcp.SimpleTcpCluster" channelSendOptions="8" channelStartOptions="3">
-                <Manager className="org.apache.catalina.ha.session.DeltaManager" expireSessionsOnShutdown="false" notifyListenersOnReplication="true"/>
-                <Channel className="org.apache.catalina.tribes.group.GroupChannel">
-                        <Sender className="org.apache.catalina.tribes.transport.ReplicationTransmitter">
-                                <Transport className="org.apache.catalina.tribes.transport.nio.PooledParallelSender" />
-                        </Sender>
-                        <Receiver className="org.apache.catalina.tribes.transport.nio.NioReceiver"
-                        address="[was address]"
-                        port="4055"
-                        autoBind="0"
-                        selectorTimeout="5000"
-                        maxThreads="6"/>
-
-                        <Interceptor className="org.apache.catalina.tribes.group.interceptors.TcpPingInterceptor" staticOnly="true"/>
-                        <Interceptor className="org.apache.catalina.tribes.group.interceptors.TcpFailureDetector" />
-                        <Interceptor className="org.apache.catalina.tribes.group.interceptors.StaticMembershipInterceptor">
-                        <Member
-                                className="org.apache.catalina.tribes.membership.StaticMember"
-                                port="4055"
-                                host="[was address1]"
+                                host="[was address0]"
                                 uniqueId="{0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1}"
                         />
                         </Interceptor>
@@ -598,47 +601,25 @@ catch(Exception e){
 
 ------------------------------------------------------------------------------------
 # 5 MySQL (DB)
+NCP환경일 경우 5.2 과정을 진행한다.
 ```bash
 cd /tmp
 
-# !!!only choice one route!!!
-
-# route 1:: architecture independent version route: 8.0.36
 wget https://dev.mysql.com/get/mysql80-community-release-el7-11.noarch.rpm
 rpm -Uvh mysql80-community-release-el7-11.noarch.rpm
 rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
 yum install mysql-community-server -y
 
-# route 2:: general availability version route: 8.3.0
-wget https://dev.mysql.com/get/Downloads/MySQL-8.3/mysql-community-server-8.3.0-1.el7.x86_64.rpm
-wget https://dev.mysql.com/get/Downloads/MySQL-8.3/mysql-community-client-8.3.0-1.el7.x86_64.rpm
-wget https://dev.mysql.com/get/Downloads/MySQL-8.3/mysql-community-client-plugins-8.3.0-1.el7.x86_64.rpm
-wget https://dev.mysql.com/get/Downloads/MySQL-8.3/mysql-community-common-8.3.0-1.el7.x86_64.rpm
-wget https://dev.mysql.com/get/Downloads/MySQL-8.3/mysql-community-libs-8.3.0-1.el7.x86_64.rpm
-wget https://dev.mysql.com/get/Downloads/MySQL-8.3/mysql-community-libs-compat-8.3.0-1.el7.x86_64.rpm
-wget https://dev.mysql.com/get/Downloads/MySQL-8.3/mysql-community-icu-data-files-8.3.0-1.el7.x86_64.rpm
-yum install libaio libaio-devel numactl-libs -y
-rpm -Uvh mysql-community-icu-data-files-8.3.0-1.el7.x86_64.rpm
-rpm -Uvh mysql-community-common-8.3.0-1.el7.x86_64.rpm
-rpm -Uvh mysql-community-client-plugins-8.3.0-1.el7.x86_64.rpm
-rpm -Uvh mysql-community-libs-8.3.0-1.el7.x86_64.rpm
-rpm -Uvh mysql-community-libs-compat-8.3.0-1.el7.x86_64.rpm
-rpm -Uvh mysql-community-client-8.3.0-1.el7.x86_64.rpm
-rpm -Uvh mysql-community-server-8.3.0-1.el7.x86_64.rpm
-rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
-
-# explain:: 
-# independent version can install independently, and only can download:v8.0.36.
-# and alos need to check newer version update.
-# but the others, need to solve dependence problem, and can download all version.
-
 systemctl enable mysqld
 systemctl start mysqld
 systemctl status mysqld
 # systemctl work
-
+```
+## 5.1 docker
+```bash
 grep 'temporary password' /var/log/mysqld.log
 mysql_secure_installation
+
 # secure work
 # root user password           > copied temp password
 # temp password expired        > [db password]
@@ -652,6 +633,11 @@ mysql_secure_installation
 mysql -u root -p
 # login mysql
 ```
+## 5.2 NCP
+```bash
+mysql -h [db address] -u [db_username] -p --port 3306
+# remote connect to the NCP mysql server
+```
 
 ```mysql
 create database world;
@@ -659,7 +645,7 @@ show databases;
 use world;
 # check db and create new db
 
-create table member(no int NOT NULL, t_name varchar(20), content TEXT);
+create table member(no int not null, t_name varchar(20), content text);
 # create new table `member`
 
 insert into member values('1', 'kkk', 'lee');
@@ -673,8 +659,8 @@ insert into member values('6', 'eee', 'ha');
 select * from member;
 # print all memeber table
 
-create user '[db username]'@'%' identified by '[db password]';
-GRANT ALL privileges ON world.* TO [db username]@'%';
+create user [db username]@'%' identified by '[db password]';
+grant all privileges on world.* to [db username]@'%';
 # create new user `nsam` and apply access of world to nsam
 
 exit
