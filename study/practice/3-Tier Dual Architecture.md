@@ -2,17 +2,17 @@
 # 0 intro
 3 계층 구조를 이중 형태로 구현하는 실습입니다. 실습에 필요한 환경 구성은 `실습 메뉴얼.md` 를 참고해주시고, 내용에 오류가 존재할 경우 알려주세요.
 
-해당 강좌는 centOS 7 환경에서 진행합니다. Cloud 환경에서 진행할 경우, ACG와 Proxy설정에 유의해주세요. docker를 사용할 경우, 컨테이너 이름에 유의하고, docker-compose 사용을 권장합니다.
+해당 강좌는 CentOS 7 환경에서 진행합니다. Cloud 환경에서 진행할 경우, ACG와 Proxy, Load Balancer의 리스너와 target group설정에 유의해주세요. docker를 사용할 경우, 컨테이너 이름에 유의하고, docker-compose 사용을 권장합니다.
 
-*NCP의 경우 6개의 서버 + 2개의 LB서버 + 1개의 DB서버를 사용하며, `ssh`명령어를 통해 접근*
+*NCP의 경우 5개의 서버 + 2개의 LB서버 + 1개의 DB서버를 사용하며, `ssh`명령어를 통해 접근*
 *docker의 경우 7개의 컨테이너를 사용하며, `docker exec -it [container] bash`명령어를 통해 접근*
 
-* last update: 2024/02/14
+* last update: 2024/02/15
 * write by [@minsubak](https://github.com/minsubak)
 
 ------------------------------------------------------------------------------------
 # 1 nginx (external LB)
-##### - NCP환경일 경우 이 과정은 넘어간다.
+##### - NCP환경일 경우 이 과정은 생략한다.
 ```bash
 vim /etc/yum.repos.d/nginx.repo
 yum install nginx -y
@@ -140,7 +140,7 @@ cd /etc/httpd/conf.d
 vim [domain].conf
 # proxy work
 
-vim ../conf/httpd.conf
+# vim ../conf/httpd.conf
 # default page edit and edit proxy setting
 # if proxy is not working normal... try this
 
@@ -220,7 +220,6 @@ httpd.conf
 ...
 # Example:
 # LoadModule foo_module modules/mod_foo.so
-# 아래의 LoadModule 3개와 include 추가 (default는 알아서 로드하기에 패스해도 무방)
 
 LoadModule proxy_module modules/mod_proxy.so
 LoadModule proxy_http_module modules/mod_proxy_http.so
@@ -247,7 +246,7 @@ ServerName www.[domain]:80
 
 -------------------------------------------------------------------------------
 # 3 nginx (internal LB)
-NCP환경일 경우 이 과정을 넘어간다.
+NCP환경일 경우 이 과정을 생략한다.
 ```bash
 vim /etc/yum.repos.d/nginx.repo
 yum install nginx -y
@@ -601,7 +600,8 @@ catch(Exception e){
 
 ------------------------------------------------------------------------------------
 # 5 MySQL (DB)
-NCP환경일 경우 5.2 과정을 진행한다.
+docker환경일 경우 5.1을 NCP환경일 경우 5.2 과정을 진행하며, host(bastion) 서버에 설치하여 DB서버에 원격으로 연결한다.
+[공식가이드](https://guide.ncloud-docs.com/docs/clouddbformysql-start)
 ```bash
 cd /tmp
 

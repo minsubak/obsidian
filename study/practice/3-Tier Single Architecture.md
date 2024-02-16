@@ -7,7 +7,7 @@
 *NCP의 경우 4~5(niginx 사용 여부)개의 서버를 사용하며, `ssh`명령어를 통해 접근*
 *docker의 경우 4개의 컨테이너를 사용하며, `docker exec -it [container] bash`명령어를 통해 접근*
 
-+ last udpate: 2024/02/08
++ last update: 2024/02/15
 + wirte & edit by [@minsubak](https://github.com/minsubak) [@DicafriO](https://github.com/DicafriO)
 
 -------------------------------------------------------------------------------
@@ -134,8 +134,9 @@ cd /etc/httpd/conf.d
 vim [domain].conf
 # proxy work
 
-vim ../conf/httpd.conf
+# vim ../conf/httpd.conf
 # default page edit and edit proxy setting
+# if proxy is not working normal... try this
 
 systemctl enable httpd
 systemctl start httpd
@@ -213,7 +214,6 @@ httpd.conf
 ...
 # Example:
 # LoadModule foo_module modules/mod_foo.so
-# 아래의 LoadModule 3개와 include 추가 (default는 알아서 로드하기에 패스해도 무방)
 
 LoadModule proxy_module modules/mod_proxy.so
 LoadModule proxy_http_module modules/mod_proxy_http.so
@@ -473,32 +473,11 @@ catch(Exception e){
 
 ```bash
 cd /tmp
-# architecture independent version route: 8.0.36
+
 wget https://dev.mysql.com/get/mysql80-community-release-el7-11.noarch.rpm
 rpm -Uvh mysql80-community-release-el7-11.noarch.rpm
 rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
 yum install mysql-community-server -y
-
-# general availability version route: 8.3.0
-wget https://dev.mysql.com/get/Downloads/MySQL-8.3/mysql-community-server-8.3.0-1.el7.x86_64.rpm
-wget https://dev.mysql.com/get/Downloads/MySQL-8.3/mysql-community-client-8.3.0-1.el7.x86_64.rpm
-wget https://dev.mysql.com/get/Downloads/MySQL-8.3/mysql-community-client-plugins-8.3.0-1.el7.x86_64.rpm
-wget https://dev.mysql.com/get/Downloads/MySQL-8.3/mysql-community-common-8.3.0-1.el7.x86_64.rpm
-wget https://dev.mysql.com/get/Downloads/MySQL-8.3/mysql-community-libs-8.3.0-1.el7.x86_64.rpm
-wget https://dev.mysql.com/get/Downloads/MySQL-8.3/mysql-community-libs-compat-8.3.0-1.el7.x86_64.rpm
-wget https://dev.mysql.com/get/Downloads/MySQL-8.3/mysql-community-icu-data-files-8.3.0-1.el7.x86_64.rpm
-yum install libaio libaio-devel numactl-libs -y
-rpm -Uvh mysql-community-icu-data-files-8.3.0-1.el7.x86_64.rpm
-rpm -Uvh mysql-community-common-8.3.0-1.el7.x86_64.rpm
-rpm -Uvh mysql-community-client-plugins-8.3.0-1.el7.x86_64.rpm
-rpm -Uvh mysql-community-libs-8.3.0-1.el7.x86_64.rpm
-rpm -Uvh mysql-community-libs-compat-8.3.0-1.el7.x86_64.rpm
-rpm -Uvh mysql-community-client-8.3.0-1.el7.x86_64.rpm
-rpm -Uvh mysql-community-server-8.3.0-1.el7.x86_64.rpm
-rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
-# independent version can install independently, and only can download latest:v8.0.36.
-# and alos need to check newer version update.
-# but the others, need to solve dependence problem, and can download all version.
 
 systemctl enable mysqld
 systemctl start mysqld
